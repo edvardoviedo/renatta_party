@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renatta | 5 Años K-Pop Demon Hunters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎤</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Loader inicial -->
+    <div class="loader" id="loader">
+      <div class="loader-content">
+        <div class="huntrix-logo">
+          <span class="huntrix-text">PARTY TIME</span>
+          <div class="demon-icon">💖</div>
+        </div>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
+        <p class="loader-subtitle">L O A D I N G</p>
+      </div>
+    </div>
+
+    <!-- Partículas de fondo -->
+    <div class="particles-container" id="particles">
+      <!-- Partículas generadas por JS -->
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <!-- Sección 1: Hero / Portada -->
+      <section class="section hero-section" id="hero">
+        <div class="hero-content">
+          <div class="hero-glow"></div>
+          <h1 class="hero-title">
+            <span class="hero-name">Renatta</span>
+            <span class="hero-age">cumple 5 Años</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span class="hero-theme">¡Estás invitado a mi fiesta!</span>
+            <span class="hero-party">🎤🔥 Are you ready?</span>
+          </div>
+          
+          <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+          </div>
+          
+      </section>
+
+      <!-- Sección 2: Frase emotiva -->
+      <section class="section emotive-section" id="emotive">
+        <div class="glass-container">
+          <div class="quote-icon">💖</div>
+          <p class="emotive-text">
+            "Estoy muy agradecida con Dios y la vida por permitirme compartir
+            contigo mis 5 añitos. Disfrutemos juntos de una fantástica K-Pop
+            Party!"
+          </p>
+          <div class="signature">- Renatta</div>
+        </div>
+      </section>
+
+      <!-- Sección 3: Cuenta regresiva -->
+      <section class="section countdown-section" id="countdown">
+        <h2 class="section-title">¡La cuenta regresiva ha comenzado!</h2>
+        <div class="countdown-container">
+          <div class="countdown-item">
+            <div class="countdown-number" id="days">00</div>
+            <div class="countdown-label">Días</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="hours">00</div>
+            <div class="countdown-label">Horas</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="minutes">00</div>
+            <div class="countdown-label">Mins</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="seconds">00</div>
+            <div class="countdown-label">Segs</div>
+          </div>
+        </div>
+        <div class="event-date">
+          <p><i class="far fa-calendar-alt"></i> Jueves 29 de enero de 2026</p>
+          <p><i class="far fa-clock"></i> 4:30 - 8:30 PM</p>
+        </div>
+      </section>
+
+      <!-- Sección 4: Imagen Full Width -->
+      <section class="section image-section" id="full-image">
+        <div class="full-width-image">
+          <img
+            src="https://raw.githubusercontent.com/duskyberry/recursos_gr-ficos/refs/heads/main/tumblr_28f5f62f2a3885d37de882d02da77c3b_2e2905c8_540.webp"
+            alt="K-Pop Demon Hunters Theme"
+            class="hero-image"
+          />
+          <div class="image-overlay"></div>
+        </div>
+      </section>
+
+      <!-- Sección 5: Detalles del evento -->
+      <section class="section details-section" id="details">
+        <h2 class="section-title">Detalles del Evento</h2>
+        <div class="glass-container details-container">
+          <div class="detail-item">
+            <div class="detail-icon">📅</div>
+            <div class="detail-content">
+              <h3>Fecha</h3>
+              <p>Jueves 29 de enero de 2026</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">⏰</div>
+            <div class="detail-content">
+              <h3>Hora</h3>
+              <p>4:30 PM</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">📍</div>
+            <div class="detail-content">
+              <h3>Lugar</h3>
+              <p>Toys House Salón Blvd. Moctezuma 1581 Col. Los Pinos</p>
+              <a
+                href="https://maps.google.com/?q=Toys+House+Salón+Boulevard+Moctezuma+1581+Col.+Los+Pinos"
+                target="_blank"
+                class="map-btn"
+              >
+                <i class="fas fa-map-marker-alt"></i> Ver Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 6: Agregar al calendario -->
+      <section class="section calendar-section" id="calendar">
+        <h2 class="section-title">No te lo pierdas</h2>
+        <div class="calendar-container">
+          
+            <i class="far fa-calendar-plus"></i> Agregar al calendario
+          </button>
+          <div class="calendar-options">
+            <button class="calendar-option-btn" id="googleCalendar">
+              <i class="fab fa-google"></i> Google Calendar
+            </button>
+            <button class="calendar-option-btn" id="appleCalendar">
+              <i class="fab fa-apple"></i> Apple Calendar
+            </button>
+          </div>
+        </div>
+      </section>
+
+    <!-- Sección 7: Playlist Spotify -->
+<section class="section playlist-section" id="playlist">
+  <h2 class="section-title">Playlist de la Fiesta</h2>
+
+  <div class="glass-container playlist-container">
+    <div class="playlist-header">
+      <i class="fab fa-spotify"></i>
+      <h3>K-Pop Renatta Mix</h3>
+    </div>
+
+    <div class="playlist-placeholder">
+      <div class="spotify-icon">
+        <i class="fab fa-spotify"></i>
+      </div>
+      <p>Playlist especial K-Pop para la fiesta</p>
+      <p class="playlist-note">
+        Disfruta conmigo de las canciones más divertidas que serán parte del soundtrack de mi fiesta (:
+      </p>
+    </div>
+
+    <div class="playlist-tracks">
+      <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/album/14JkAa6IiFaOh5s0nMyMU9?utm_source=generator&theme=0"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Sección 8: Mini Galería - Renatta -->
+      <section class="section gallery-section" id="gallery">
+        <h2 class="section-title">Mini galería de Renatta</h2>
+        <div class="gallery-container">
+          <div class="gallery-slider" id="gallerySlider">
+            <div class="gallery-track" id="galleryTrack">
+              <!-- Las imágenes se cargarán dinámicamente desde JS -->
+              <!-- Placeholders listos para reemplazar -->
+            </div>
+          </div>
+          <div class="gallery-nav">
+            <button class="gallery-nav-btn prev" id="prevBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="gallery-dots" id="galleryDots">
+              <!-- Dots generados por JS -->
+            </div>
+            <button class="gallery-nav-btn next" id="nextBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 9: Formulario RSVP -->
+      <section class="section rsvp-section" id="rsvp">
+        <h2 class="section-title">Confirma tu asistencia</h2>
+        <div class="glass-container rsvp-container">
+          <form id="rsvpForm">
+            <div class="form-group">
+              <label for="guestName">
+                <i class="fas fa-user"></i> Tu nombre
+              </label>
+              <input
+                type="text"
+                id="guestName"
+                required
+                placeholder="¿Cómo te llamas?"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="accompaniments">
+                <i class="fas fa-users"></i> Acompañantes
+              </label>
+              <div class="accompaniments-selector">
+                <button type="button" class="accompaniment-btn minus">-</button>
+                <input
+                  type="number"
+                  id="accompaniments"
+                  value="0"
+                  min="0"
+                  max="9"
+                  readonly
+                />
+                <button type="button" class="accompaniment-btn plus">+</button>
+              </div>
+              <div class="accompaniments-info">
+                <p>
+                  (Incluyéndote a ti serían
+                  <span id="totalGuests">1</span> en total)
+                </p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">
+                <i class="fas fa-heart"></i> Mensaje especial para Renatta
+              </label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Escribe un mensaje especial para Renatta..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <i class="fab fa-whatsapp"></i> Confirmar asistencia
+            </button>
+          </form>
+          <p class="rsvp-note">
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección 10: Itinerario -->
+      <section class="section itinerary-section" id="itinerary">
+        <h2 class="section-title">Itinerario de la Fiesta</h2>
+        <div class="itinerary-container">
+          <!-- Las cards se generarán dinámicamente desde JS -->
+        </div>
+      </section>
+
+      <!-- Sección 11: Regalos -->
+      <section class="section gifts-section" id="gifts">
+        <h2 class="section-title">¿Listo(a) para bailar y disfrutar?</h2>
+      
+        <div class="glass-container gifts-container">
+          <div class="gift-icon">🎁</div>
+      
+          <p class="gifts-text">
+            Tu compañía es el regalo más especial, pero si deseas obsequiarme
+            algo aquí está mi wish list
+          </p>
+      
+          <!-- Botón Wishlist Amazon -->
+          <a
+            href="#"
+            class="wishlist-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-amazon"></i>
+            Ver wishlist en Amazon
+          </a>
+      
+          <div class="floating-hearts">
+            <div class="floating-heart">💖</div>
+            <div class="floating-heart">🎀</div>
+            <div class="floating-heart">✨</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 12: Contacto Mamá -->
+      <section class="section contact-section" id="contact">
+        <h2 class="section-title">¿Tienes dudas?</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-icon">👩‍👧</div>
+            <h3>Habla con mi mami</h3>
+            <p>Para cualquier pregunta sobre la fiesta o cómo llegar</p>
+          </div>
+          <a
+            href="https://wa.me/528443967200?text=Hola,%20tengo%20una%20pregunta%20sobre%20la%20fiesta%20de%20Renatta"
+            target="_blank"
+            class="whatsapp-btn"
+          >
+            <i class="fab fa-whatsapp"></i> Contacto
+          </a>
+        </div>
+      </section>
+
+      <!-- Sección 13: Foto Final -->
+      <section class="section final-section" id="final">
+        <div class="final-image">
+          <!-- Imagen de Renatta placeholder -->
+          <div class="final-image-placeholder">
+            <div class="final-image-content">
+              <div class="final-icon"></div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="final-message">
+          <h2 class="final-title">¡Te espero!</h2>
+          <p class="final-heart">💖</p>
+          <p class="final-subtitle">
+            ¡No faltes!
+          </p>
+        </div>
+      </section>
+
+      <div class="pre-footer-image">
+        <img
+          src="https://raw.githubusercontent.com/duskyberry/recursos_gr-ficos/refs/heads/main/rQgZCb79a7WARf69Pp.webp"
+          alt="Imagen pre-footer"
+          class="responsive-pre-footer"
+        />
+      </div>
+      
+
+      <!-- Sección 14: Footer -->
+      <footer class="footer" id="footer">
+        <div class="footer-content">
+          <p class="footer-text">
+            Made with <span class="heart">❤️</span> by
+            <a
+              href="https://wa.me/528442934546"
+              target="_blank"
+              class="duskyberry-link"
+            >
+              duskyberry
+            </a>
+          </p>
+          <p class="footer-contact">
+           
+            
+          
+        </div>
+    
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
