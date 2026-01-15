@@ -22,6 +22,16 @@
     />
   </head>
   <body>
+ 
+    
+    <!-- CINTILLA SUPERIOR -->
+<div class="top-banner">
+  <img
+    src="https://raw.githubusercontent.com/edvardoviedo/renatta_party/refs/heads/main/assets/renatta_cover.jpg"
+    alt="Renatta Party Cover"
+  />
+</div>
+
     <!-- Loader inicial -->
     <div class="loader" id="loader">
       <div class="loader-content">
@@ -42,25 +52,47 @@
     </div>
 
     <!-- Contenido principal -->
-    <main class="main-content">
-      <!-- Sección 1: Hero / Portada -->
-      <section class="section hero-section" id="hero">
+    <section class="section hero-section" id="hero">
+
+      <!-- GRUPO HERO -->
+      <div class="hero-stack">
+    
+        <!-- TEXTO -->
         <div class="hero-content">
           <div class="hero-glow"></div>
+    
           <h1 class="hero-title">
             <span class="hero-name">Renatta</span>
             <span class="hero-age">cumple 5 Años</span>
           </h1>
+    
           <div class="hero-subtitle">
             <span class="hero-theme">¡Estás invitado a mi fiesta!</span>
+          
             <span class="hero-party">🎤🔥 Are you ready?</span>
+          
+            <div class="scroll-icon-wrapper">
+              <svg
+                class="scroll-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                fill="currentColor"
+                viewBox="0 0 24 24">
+                <path d="m12 15.41 6.71-6.7-1.42-1.42-4.29 4.3V2h-2v9.59l-4.29-4.3-1.42 1.42z"></path>
+                <path d="M21 13h-2c0 3.86-3.14 7-7 7s-7-3.14-7-7H3c0 4.96 4.04 9 9 9s9-4.04 9-9"></path>
+              </svg>
+            </div>
           </div>
           
-          <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-          </div>
           
-      </section>
+    
+      </div>
+    
+    </section>
+    
+    
+      
 
       <!-- Sección 2: Frase emotiva -->
       <section class="section emotive-section" id="emotive">
@@ -205,29 +237,36 @@
 </section>
 
 
-      <!-- Sección 8: Mini Galería - Renatta -->
-      <section class="section gallery-section" id="gallery">
-        <h2 class="section-title">Mini galería de Renatta</h2>
-        <div class="gallery-container">
-          <div class="gallery-slider" id="gallerySlider">
-            <div class="gallery-track" id="galleryTrack">
-              <!-- Las imágenes se cargarán dinámicamente desde JS -->
-              <!-- Placeholders listos para reemplazar -->
-            </div>
-          </div>
-          <div class="gallery-nav">
-            <button class="gallery-nav-btn prev" id="prevBtn">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="gallery-dots" id="galleryDots">
-              <!-- Dots generados por JS -->
-            </div>
-            <button class="gallery-nav-btn next" id="nextBtn">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+    <!-- Sección 8: Mini Galería - Renatta -->
+<section class="gallery-section">
+
+
+  <h2 class="section-title">Mini Galería</h2>
+
+  <p class="mini-gallery-text">
+    Momentos especiales de Renatta
+  </p>
+
+  <div class="mini-gallery-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.5 2C8.61 2 5.27 3.98 3.8 6.8L2 5v5h5L5.31 8.31C6.23 5.82 9.1 4 12.5 4c4.14 0 7.5 2.69 7.5 6h2c0-4.41-4.26-8-9.5-8"></path>
+      <path d="M12.5 6.04A2.998 2.998 0 0 0 9 9v5.85l-.68-.33c-.94-.46-2.02-.4-2.91.15S4 16.17 4 17.22v.16c0 .41.2.79.53 1.02l4.89 3.43c.17.12.37.18.57.18h10c.55 0 1-.45 1-1v-5.69c0-1.24-.93-2.31-2.16-2.48l-3.84-.53v-3.2c0-1.52-1.08-2.83-2.5-3.07Zm6.07 8.77c.25.03.43.25.43.5V20h-8.68l-4.29-3.01c.08-.36.33-.56.45-.63.14-.09.52-.27.97-.05l2.12 1.04a.999.999 0 0 0 1.44-.9V9c0-.29.13-.57.35-.76.23-.19.52-.27.82-.22.46.08.82.55.82 1.09v4.07c0 .5.37.92.86.99l4.7.65Z"></path>
+    </svg>
+  </div>
+
+  <!-- GALERÍA (NO TOCADA) -->
+  <div class="gallery-css">
+    <img src="https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/2.jpg" alt="Renatta 1" />
+    <img src="https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/4.jpg" alt="Renatta 2" />
+    <img src="https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/5.jpg" alt="Renatta 3" />
+    <img src="https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/6.jpg" alt="Renatta 4" />
+    <img src="https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/7.jpg" alt="Renatta 5" />
+  </div>
+
+</section>
+
+      
 
       <!-- Sección 9: Formulario RSVP -->
       <section class="section rsvp-section" id="rsvp">
@@ -290,13 +329,50 @@
         </div>
       </section>
 
-      <!-- Sección 10: Itinerario -->
-      <section class="section itinerary-section" id="itinerary">
-        <h2 class="section-title">Itinerario de la Fiesta</h2>
-        <div class="itinerary-container">
-          <!-- Las cards se generarán dinámicamente desde JS -->
-        </div>
-      </section>
+   <!-- Sección 10: Itinerario -->
+<section class="section itinerary-section" id="itinerary">
+  <h2 class="section-title">Itinerario de la Fiesta</h2>
+
+  <div class="itinerary-container">
+
+    <article class="itinerary-card">
+      <div class="itinerary-icon">🎉</div>
+      <h3>Recepción</h3>
+      <span class="itinerary-time">4:30 PM</span>
+      <p>Bienvenido(a) a mi fiesta</p>
+    </article>
+
+    <article class="itinerary-card">
+      <div class="itinerary-icon">🍭</div>
+      <h3>Candy / Snack</h3>
+      <span class="itinerary-time">5:00 PM</span>
+      <p>Mesa de dulces y snacks</p>
+    </article>
+
+    <article class="itinerary-card">
+      <div class="itinerary-icon">🍕</div>
+      <h3>Comida</h3>
+      <span class="itinerary-time">6:00 PM</span>
+      <p></p>
+    </article>
+
+    <article class="itinerary-card">
+      <div class="itinerary-icon">🎊</div>
+      <h3>Piñata</h3>
+      <span class="itinerary-time">6:45 PM</span>
+      <p></p>
+    </article>
+
+    <article class="itinerary-card">
+      <div class="itinerary-icon">🎂</div>
+      <h3>Pastel</h3>
+      <span class="itinerary-time">7:15 PM</span>
+      <p>¡Momento de cantar y soplar velas!</p>
+    </article>
+
+  </div>
+</section>
+
 
       <!-- Sección 11: Regalos -->
       <section class="section gifts-section" id="gifts">
@@ -312,7 +388,7 @@
       
           <!-- Botón Wishlist Amazon -->
           <a
-            href="#"
+            href="https://www.amazon.com.mx/hz/wishlist/ls/37Q4B7T4PTYU7?ref_=wl_share"
             class="wishlist-btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -339,7 +415,7 @@
             <p>Para cualquier pregunta sobre la fiesta o cómo llegar</p>
           </div>
           <a
-            href="https://wa.me/528443967200?text=Hola,%20tengo%20una%20pregunta%20sobre%20la%20fiesta%20de%20Renatta"
+            href="https://wa.me/528441298200?text=Hola,%20tengo%20una%20pregunta%20sobre%20la%20fiesta%20de%20Renatta"
             target="_blank"
             class="whatsapp-btn"
           >
@@ -348,14 +424,15 @@
         </div>
       </section>
 
-      <!-- Sección 13: Foto Final -->
-      <section class="section final-section" id="final">
-        <div class="final-image">
-          <!-- Imagen de Renatta placeholder -->
-          <div class="final-image-placeholder">
-            <div class="final-image-content">
-              <div class="final-icon"></div>
-              <p></p>
+   <!-- Imagen final de Renatta (PNG circular) -->
+<div class="final-image-png">
+  <img
+    src="https://raw.githubusercontent.com/edvardoviedo/renatta_party/refs/heads/main/assets/circle_renatta.png"
+    alt="Renatta"
+  />
+</div>
+
+
             </div>
           </div>
         </div>
@@ -377,28 +454,97 @@
       </div>
       
 
-      <!-- Sección 14: Footer -->
       <footer class="footer" id="footer">
         <div class="footer-content">
           <p class="footer-text">
-            Made with <span class="heart">❤️</span> by
+            Made with <span class="heart">&#10084;</span> by
             <a
-              href="https://wa.me/528442934546"
+              href="https://wa.me/528442934546?text=%C2%A1Hola!%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20para%20una%20invitaci%C3%B3n%20como%20la%20de%20renatta"
               target="_blank"
               class="duskyberry-link"
             >
               duskyberry
             </a>
+      
+            <a
+              href="https://wa.me/528442934546?text=%C2%A1Hola!%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20para%20una%20invitaci%C3%B3n%20como%20la%20de%20renatta"
+              target="_blank"
+              class="wa-btn"
+              aria-label="WhatsApp"
+            >
+              <img
+                src="https://raw.githubusercontent.com/edvardoviedo/recursos/abeceb3cd796eccfd0b6abc1671bb582a8904ec5/whatsapp-logo-variant-svgrepo-com.svg"
+                alt="WhatsApp"
+                class="wa-icon"
+              />
+            </a>
           </p>
-          <p class="footer-contact">
-           
-            
-          
         </div>
-    
       </footer>
+      
+      
     </main>
 
     <script src="script.js"></script>
+
+    <script>
+      const form = document.getElementById("rsvpForm");
+    
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        const name = document.getElementById("guestName").value;
+        const accompaniments = document.getElementById("accompaniments").value;
+        const message = document.getElementById("message").value;
+        const totalGuests = parseInt(accompaniments) + 1;
+    
+        const phone = "528441298200"; // SIN + ni espacios
+    
+        const text = `
+    🎉 *Confirmación de asistencia* 🎉
+    
+    👤 Nombre: ${name}
+    👥 Total de asistentes: ${totalGuests}
+    💬 Mensaje: ${message || "Sin mensaje"}
+        `;
+    
+        const encodedText = encodeURIComponent(text.trim());
+    
+        const whatsappURL = `https://wa.me/${phone}?text=${encodedText}`;
+    
+        window.open(whatsappURL, "_blank");
+      });
+    </script>
+    <script>
+      const minusBtn = document.querySelector(".accompaniment-btn.minus");
+      const plusBtn = document.querySelector(".accompaniment-btn.plus");
+      const accompInput = document.getElementById("accompaniments");
+      const totalGuestsSpan = document.getElementById("totalGuests");
+    
+      function updateTotal() {
+        totalGuestsSpan.textContent = parseInt(accompInput.value) + 1;
+      }
+    
+      minusBtn.addEventListener("click", () => {
+        let value = parseInt(accompInput.value);
+        if (value > 0) {
+          accompInput.value = value - 1;
+          updateTotal();
+        }
+      });
+    
+      plusBtn.addEventListener("click", () => {
+        let value = parseInt(accompInput.value);
+        if (value < 9) {
+          accompInput.value = value + 1;
+          updateTotal();
+        }
+      });
+    
+      // Inicializa al cargar
+      updateTotal();
+    </script>
+    
+    
   </body>
 </html>
