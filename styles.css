@@ -67,7 +67,7 @@ body {
 
 .loader-content {
   text-align: center;
-  animation: pulse 2s infinite;
+  animation: loaderPulse 2s infinite;
 }
 
 .huntrix-logo {
@@ -293,15 +293,9 @@ body {
 }
 
 .scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  animation: bounce 2s infinite;
+  justify-content: center;
+  opacity: 0.85;
 }
 
 .scroll-dot {
@@ -325,7 +319,7 @@ body {
    SECCIÓN EMOTIVA
    ============================================ */
 .emotive-section {
-  padding-top: 60px;
+  padding-top: 1px;
 }
 
 .quote-icon {
@@ -1555,4 +1549,579 @@ body {
 
 .wishlist-btn:active {
   transform: scale(0.98);
+}
+.hero-section {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* CONTENIDO DE TEXTO */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* IMAGEN FULL WIDTH */
+.hero-image {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); /* fuerza extremo a extremo */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* RESET para que quede realmente pegado arriba */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO */
+.hero-section {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* IMAGEN */
+.hero-image img {
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* TEXTO ENCIMA */
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.hero-section {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.hero-image {
+  width: 100vw;
+}
+
+.hero-image img {
+  display: block;
+  width: 100vw;
+  height: auto;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CINTILLA SUPERIOR REAL */
+.top-banner {
+  width: 100vw;
+}
+
+.top-banner img {
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.top-banner img {
+  width: 100vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+
+  /* DIFUMINADO INFERIOR */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgb(121, 16, 240) 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgb(248, 79, 248) 75%,
+    transparent 100%
+  );
+}
+.hero-section {
+  position: relative;
+}
+.hero-content {
+  margin-top: -14rem;
+}
+.hero-party {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scroll-icon {
+  color: #fff;
+  opacity: 0.75;
+
+  animation: floatIcon 2.4s ease-in-out infinite;
+}
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+}
+.hero-section {
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+
+.emotive-section {
+  margin-top: -40vh;
+}
+.final-image-img {
+  object-fit: cover;
+  object-position: center top; /* prueba top / center / bottom */
+}
+.final-image-img {
+  object-fit: cover;
+  object-position: center top;
+}
+.final-image-png {
+  width: 280px;
+  max-width: 80vw;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-image-png img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  /* glow sutil */
+  filter: drop-shadow(0 0 25px rgba(255, 16, 240, 0.45));
+
+  /* respiración suave */
+  animation: pngFloat 4.5s ease-in-out infinite;
+}
+@keyframes pngFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.gallery-track {
+  display: flex;
+}
+.gallery-slide {
+  min-width: 100%;
+  flex-shrink: 0; /* 👈 CLAVE */
+}
+.gallery-slide {
+  overflow: visible; /* 👈 CLAVE */
+}
+.gallery-track {
+  display: flex;
+  align-items: center;
+}
+.gallery-slide {
+  min-width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.gallery-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.gallery-track {
+  display: flex;
+  align-items: center;
+  transition: transform 0.6s ease; /* 👈 AQUÍ */
+  will-change: transform;
+}
+.gallery-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+.gallery-section {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.gallery-css {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  padding: 0 1rem;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery-css::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-css img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 280px;
+
+  scroll-snap-align: center;
+
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+
+  user-select: none;
+  pointer-events: none;
+}
+.hero-party {
+  display: inline-block;
+  margin: 0 auto;
+}
+.gallery-section {
+  text-align: center;
+}
+
+.hero-party {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.mini-gallery-title {
+  font-size: 1.8rem;
+  margin: 0.4rem 0;
+}
+
+.mini-gallery-text {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 1.2rem;
+}
+
+.mini-gallery-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+.itinerary-section {
+  padding: 60px 20px;
+}
+
+.itinerary-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* 💎 Card Glass */
+.itinerary-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.itinerary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.itinerary-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.itinerary-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.itinerary-time {
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.itinerary-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* 💻 Tablet / Desktop */
+@media (min-width: 768px) {
+  .itinerary-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+/* 🌸 Fondo de partículas */
+.particles-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ✨ Partícula base */
+.particle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 180, 255, 0.35),
+    rgba(180, 120, 255, 0.15),
+    transparent 70%
+  );
+  border-radius: 50%;
+  filter: blur(25px);
+  opacity: 0.6;
+  animation: float 18s linear infinite;
+}
+
+/* Variaciones suaves */
+.particle:nth-child(2) {
+  width: 80px;
+  height: 80px;
+  animation-duration: 22s;
+  opacity: 0.4;
+}
+
+.particle:nth-child(3) {
+  width: 160px;
+  height: 160px;
+  animation-duration: 26s;
+  opacity: 0.5;
+}
+
+.particle:nth-child(4) {
+  width: 60px;
+  height: 60px;
+  animation-duration: 20s;
+}
+
+.particle:nth-child(5) {
+  width: 140px;
+  height: 140px;
+  animation-duration: 30s;
+  opacity: 0.35;
+}
+
+/* Posiciones iniciales random-ish */
+.particle:nth-child(1) {
+  top: 10%;
+  left: 15%;
+}
+.particle:nth-child(2) {
+  top: 60%;
+  left: 70%;
+}
+.particle:nth-child(3) {
+  top: 80%;
+  left: 20%;
+}
+.particle:nth-child(4) {
+  top: 30%;
+  left: 80%;
+}
+.particle:nth-child(5) {
+  top: 50%;
+  left: 40%;
+}
+.particle:nth-child(6) {
+  top: 70%;
+  left: 10%;
+}
+.particle:nth-child(7) {
+  top: 20%;
+  left: 55%;
+}
+.particle:nth-child(8) {
+  top: 90%;
+  left: 85%;
+}
+
+/* 🫧 Animación flotante */
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-60px) translateX(40px);
+  }
+  100% {
+    transform: translateY(-120px) translateX(-30px);
+  }
+}
+/* ✨ Fix flotación etérea (no se va, no se reinicia) */
+.gift-icon {
+  animation: floatSoft 3.5s ease-in-out infinite;
+}
+
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 💖 Flotación etérea para quote icon */
+.quote-icon {
+  animation: floatSoft 3.5s ease-in-out infinite;
+}
+.footer {
+  padding: 12px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.footer-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.heart {
+  color: #ff5fa2;
+  font-size: 0.85rem;
+}
+
+.duskyberry-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.wa-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #25d366;
+  color: white;
+  animation: waPulse 1.8s infinite;
+  text-decoration: none;
+}
+
+.wa-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Latido */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.wa-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.wa-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+@keyframes waPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loaderPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
