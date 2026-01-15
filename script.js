@@ -15,11 +15,11 @@ const PARTICLE_COLORS = [
 
 // Galería de imágenes (placeholders listos para reemplazar)
 const GALLERY_IMAGES = [
-  { alt: "Renatta 1", placeholder: "👧" },
-  { alt: "Renatta 2", placeholder: "🎀" },
-  { alt: "Renatta 3", placeholder: "✨" },
-  { alt: "Renatta 4", placeholder: "🎂" },
-  { alt: "Renatta 5", placeholder: "🎉" },
+  "https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/2.jpg",
+  "https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/4.jpg",
+  "https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/5.jpg",
+  "https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/6.jpg",
+  "https://raw.githubusercontent.com/edvardoviedo/renatta_party/main/assets/renatta_pics/7.jpg",
 ];
 
 // Itinerario del evento
@@ -35,12 +35,6 @@ const ITINERARY_ITEMS = [
     title: "Candy / Snack",
     time: "4:30 PM",
     description: "Mesa de dulces y snacks temáticos K-Pop",
-  },
-  {
-    icon: "🎤",
-    title: "Show",
-    time: "5:00 PM",
-    description: "Espectáculo especial K-Pop Demon Hunters",
   },
   {
     icon: "🍕",
@@ -265,16 +259,12 @@ function initGallery() {
     const slide = document.createElement("div");
     slide.className = "gallery-slide";
 
-    // Crear placeholder (en producción, reemplazar con <img src="..." alt="...">)
-    const placeholder = document.createElement("div");
-    placeholder.className = "image-placeholder";
-    placeholder.innerHTML = `
-            <i class="fas fa-image"></i>
-            <p>${image.alt}</p>
-            <p><small>Imagen ${index + 1} de ${totalSlides}</small></p>
-        `;
+    const img = document.createElement("img");
+    img.src = image;
+    img.alt = `Renatta ${index + 1}`;
+    img.loading = "lazy";
 
-    slide.appendChild(placeholder);
+    slide.appendChild(img);
     galleryTrack.appendChild(slide);
 
     // Crear dot
@@ -284,6 +274,9 @@ function initGallery() {
     dot.addEventListener("click", () => goToSlide(index));
     galleryDots.appendChild(dot);
   });
+
+  // 👇👇👇 ESTA LÍNEA ES LA CLAVE
+  goToSlide(0);
 
   // Función para cambiar de slide
   function goToSlide(index) {
